@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI calculator</h1>
+        <label>
+            <input id="height_input" type="number" placeholder="ส่วนสูง (เซนติเมตร) :">
+        </label>
+        <label>
+            <input id="weight_input" type="number" placeholder="น้ำหนัก (กิโลกรัม) :">
+        </label>
+        <button type="submit" onclick="Calculate()">คำนวณ</button>
+            
+        <div class="bmi_value">
+            <h4>ค่าที่ได้ : </h4>
+            <div id="bmi_output"></div>
+        </div>
+        <div class="bmi_status">
+            <h4>คุณอยู่ในเกณฑ์ : </h4>
+            <div id="bmi_status"></div>
+        </div>   
+    </div>
+</body>
+</html>
